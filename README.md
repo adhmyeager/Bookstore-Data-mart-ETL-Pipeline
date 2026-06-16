@@ -212,7 +212,7 @@ RETURN DIVIDE(Current - Previous, Previous)
 **Visuals:** 4 KPI cards, monthly revenue line chart, top-10-books bar chart, shipping-method donut, revenue-by-language treemap, 4 cross-filtering slicers (year, quarter, country, language), and a drill-through "Book Detail" page.
 
 <p align="center">
-  <img src="docs/screenshots/dashboard-overview.png" alt="Power BI dashboard overview" width="800">
+<img width="1917" height="857" alt="image" src="https://github.com/user-attachments/assets/5d9278b1-ce4b-42a3-abe9-cf1fb06e3bad" />
   <br><em>Add your dashboard screenshot at this path, or update/remove this line.</em>
 </p>
 
