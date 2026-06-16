@@ -91,6 +91,7 @@ Key join chain that becomes the fact table:
 `customer → cust_order → order_line → book`
 
 ### Star Schema — `gravity_books_mart`
+<img width="977" height="817" alt="2" src="https://github.com/user-attachments/assets/202c0455-63bd-4a9b-863d-3162232fe7a8" />
 
 ```mermaid
 erDiagram
