@@ -92,57 +92,6 @@ Key join chain that becomes the fact table:
 
 ### Star Schema — `gravity_books_mart`
 <img width="977" height="817" alt="2" src="https://github.com/user-attachments/assets/202c0455-63bd-4a9b-863d-3162232fe7a8" />
-
-```mermaid
-erDiagram
-    fact_sales }o--|| dim_date : "date_key"
-    fact_sales }o--|| dim_customer : "customer_key"
-    fact_sales }o--|| dim_book : "book_key"
-    fact_sales }o--|| dim_shipping : "shipping_key"
-
-    fact_sales {
-        int sales_key PK
-        int date_key FK
-        int customer_key FK
-        int book_key FK
-        int shipping_key FK
-        int order_id
-        int line_id
-        decimal unit_price
-        int quantity
-        decimal total_amount
-    }
-    dim_date {
-        int date_key PK
-        date full_date
-        int year
-        varchar quarter_name
-        varchar month_name
-        varchar day_name
-    }
-    dim_customer {
-        int customer_key PK
-        int customer_id
-        varchar full_name
-        varchar city
-        varchar country
-    }
-    dim_book {
-        int book_key PK
-        int book_id
-        varchar title
-        varchar author_name
-        varchar publisher_name
-        varchar language_name
-    }
-    dim_shipping {
-        int shipping_key PK
-        int method_id
-        varchar method_name
-        decimal cost
-    }
-```
-
 **Grain:** one row per order line item (one book within one order).
 
 **Design decisions:**
